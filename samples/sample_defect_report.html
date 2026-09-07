@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sample Defect Executive Status Report</title>
+<style>
+body {font-family: Arial, sans-serif; margin: 24px; color: #1f2937; background: #f8fafc;}
+h1 {margin-bottom: 4px;}
+.subtitle {color: #64748b; margin-top: 0;}
+.grid {display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 14px; margin: 18px 0 24px;}
+.card {background: #fff; border-radius: 10px; padding: 14px 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);}
+.kpi {font-size: 28px; font-weight: 700; margin: 6px 0 0;}
+.kpi-label {font-size: 13px; color: #64748b;}
+.section {background: #fff; border-radius: 10px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08);}
+table {width: 100%; border-collapse: collapse;}
+th, td {border-bottom: 1px solid #e2e8f0; padding: 9px; text-align: left; vertical-align: top;}
+th {background: #f1f5f9; font-size: 13px;}
+.bar {background: #e2e8f0; border-radius: 999px; height: 10px; width: 100%;}
+.bar span {display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #0ea5e9, #6366f1);}
+.status {padding: 3px 8px; border-radius: 999px; background: #e0f2fe; color: #075985; font-size: 12px;}
+</style>
+</head>
+<body>
+<h1>Sample Defect Executive Status Report</h1>
+<p class="subtitle">Generated on 2026-09-07 13:59</p>
+<div class="grid">
+  <div class="card"><div class="kpi-label">Total Defects</div><div class="kpi">5</div></div>
+  <div class="card"><div class="kpi-label">Open Defects</div><div class="kpi">3</div></div>
+  <div class="card"><div class="kpi-label">Closed Defects</div><div class="kpi">2</div></div>
+  <div class="card"><div class="kpi-label">Avg Open Age (days)</div><div class="kpi">13.7</div></div>
+  <div class="card"><div class="kpi-label">Stale Defects (&gt;14d)</div><div class="kpi">2</div></div>
+  <div class="card"><div class="kpi-label">Updated Last 7 Days</div><div class="kpi">2</div></div>
+</div>
+<div class="section">
+  <h2>Status Breakdown</h2>
+  <table><thead><tr><th>Status</th><th>Count</th><th>Distribution</th></tr></thead><tbody><tr><td>Open</td><td>2</td><td><div class="bar"><span style="width:100%"></span></div></td></tr>
+<tr><td>In Progress</td><td>1</td><td><div class="bar"><span style="width:50%"></span></div></td></tr>
+<tr><td>Resolved</td><td>1</td><td><div class="bar"><span style="width:50%"></span></div></td></tr>
+<tr><td>Closed</td><td>1</td><td><div class="bar"><span style="width:50%"></span></div></td></tr></tbody></table>
+</div>
+<div class="section">
+  <h2>Priority Breakdown</h2>
+  <table><thead><tr><th>Priority</th><th>Count</th><th>Distribution</th></tr></thead><tbody><tr><td>P2</td><td>3</td><td><div class="bar"><span style="width:100%"></span></div></td></tr>
+<tr><td>P1</td><td>1</td><td><div class="bar"><span style="width:33%"></span></div></td></tr>
+<tr><td>P3</td><td>1</td><td><div class="bar"><span style="width:33%"></span></div></td></tr></tbody></table>
+</div>
+<div class="section">
+  <h2>Severity Breakdown</h2>
+  <table><thead><tr><th>Severity</th><th>Count</th><th>Distribution</th></tr></thead><tbody><tr><td>Major</td><td>3</td><td><div class="bar"><span style="width:100%"></span></div></td></tr>
+<tr><td>Critical</td><td>1</td><td><div class="bar"><span style="width:33%"></span></div></td></tr>
+<tr><td>Minor</td><td>1</td><td><div class="bar"><span style="width:33%"></span></div></td></tr></tbody></table>
+</div>
+<div class="section">
+  <h2>Top Assignees by Defect Load</h2>
+  <table><thead><tr><th>Assignee</th><th>Count</th><th>Distribution</th></tr></thead><tbody><tr><td>Alice</td><td>2</td><td><div class="bar"><span style="width:100%"></span></div></td></tr>
+<tr><td>Bob</td><td>1</td><td><div class="bar"><span style="width:50%"></span></div></td></tr>
+<tr><td>Carol</td><td>1</td><td><div class="bar"><span style="width:50%"></span></div></td></tr>
+<tr><td>Dan</td><td>1</td><td><div class="bar"><span style="width:50%"></span></div></td></tr></tbody></table>
+</div>
+<div class="section">
+  <h2>Defect Detail</h2>
+  <table><thead><tr><th>Defect Id</th><th>Story Name</th><th>Bug Title</th><th>Bug Status</th><th>Priority</th><th>Severity</th><th>Assigned To</th><th>Bug Created Date</th><th>Last Updated Date</th><th>Last Updated By</th></tr></thead><tbody><tr><td>BUG-1001</td><td>Checkout payment retry</td><td>Payment retries duplicate charge</td><td><span class="status">Open</span></td><td>P1</td><td>Critical</td><td>Alice</td><td>2026-08-28</td><td>2026-09-05</td><td>alice</td></tr><tr><td>BUG-1005</td><td>Search filters</td><td>Status filter resets unexpectedly</td><td><span class="status">Open</span></td><td>P2</td><td>Major</td><td>Dan</td><td>2026-08-25</td><td>2026-09-06</td><td>dan</td></tr><tr><td>BUG-1002</td><td>Checkout validation</td><td>Coupon code accepts invalid characters</td><td><span class="status">In Progress</span></td><td>P2</td><td>Major</td><td>Bob</td><td>2026-08-20</td><td>2026-08-21</td><td>bob</td></tr><tr><td>BUG-1004</td><td>User profile</td><td>Avatar upload fails for PNG</td><td><span class="status">Closed</span></td><td>P2</td><td>Major</td><td>Alice</td><td>2026-08-10</td><td>2026-08-11</td><td>alice</td></tr><tr><td>BUG-1003</td><td>Order history</td><td>Order history sorting reversed</td><td><span class="status">Resolved</span></td><td>P3</td><td>Minor</td><td>Carol</td><td>2026-07-31</td><td>2026-08-30</td><td>carol</td></tr></tbody></table>
+</div>
+</body>
+</html>
